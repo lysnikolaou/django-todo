@@ -27,8 +27,8 @@
             </div>
           </td>
           <td>
-            <form action="{% url 'edit_task' id=task.id %}" method="get">{% csrf_token %}<button type="submit" style="border: none; background-color: white"><i class="far fa-edit"></i></button></form>
-            <form action="{% url 'delete_task' id=task.id %}" method="post">{% csrf_token %}<button type="submit" style="border: none; background-color: white"><i class="far fa-trash-alt"></i></button></form>
+            <form style = "display:inline;" action="{% url 'edit_task' id=task.id %}" method="get">{% csrf_token %}<button type="submit" style="border: none; background-color: white"><i class="far fa-edit"></i></button></form>
+            <form style = "display:inline;" action="{% url 'delete_task' id=task.id %}" method="post">{% csrf_token %}<button type="submit" style="border: none; background-color: white"><i class="far fa-trash-alt"></i></button></form>
           </td>
         </tr>
       {% endfor %}
